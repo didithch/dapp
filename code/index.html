@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>梭哈</title>
+  </head>
+  <style>
+    input {
+      display: block;
+      margin-bottom: 12px;
+    }
+     .join_game{  
+            position: absolute;  
+            top: 370px;   
+            left: 370px;  
+            transform: translate(-50%, -50%);   
+     }  
+
+     #all {
+	 background-color: white;
+	 width: 750px;
+         height: 750px;
+         float: left;
+    }
+     #top {
+	 background-color: yellow;
+	 width: 558px;
+         height: 96px;
+         margin-left: 96px;
+         float: left;
+     }
+     #left {
+	 background-color: yellow;
+	 width: 96px;
+         height: 558px;
+         float: left;
+	 clear: left;
+     }
+     #right {
+	 background-color: yellow;
+	 width: 96px;
+         height: 558px;
+	 float: right;
+     }
+     #bottom {
+	 background-color: yellow;
+	 width: 558px;
+         height: 96px;
+         margin-left: 96px;
+	 clear: left ;
+     }
+  </style>
+  <body>
+
+    <div id="all">
+         <div id="top"></div>
+         <div id="left"></div>
+         <div id="right"></div>
+         <div id="bottom"></div>
+   </div> 
+       <div class="join_game"> 
+          <button onclick="App.start()">create game</button>
+          <button onclick="App.joingame()">join game</button>
+          <p class="player"> </p>
+	   <div >
+		   game address: <span id="game-address"></span> 
+	   </div>
+	   <div >
+		   public key: <span id="public-key"></span> 
+	   </div>
+	   <div >
+		   email address: <span id="email"></span> 
+	   </div>
+       </div>
+    <script  src="https://code.jquery.com/jquery-3.4.1.min.js"
+             integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+             crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
